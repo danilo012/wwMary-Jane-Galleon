@@ -5,7 +5,7 @@
 <head>
   <meta name="viewport" content="width=device-width">
 
-  <meta http-equiv="refresh" content="10000">
+  <meta http-equiv="refresh" content="60000">
 
         <script>
 
@@ -15,7 +15,7 @@
 
         }
 
-        setInterval('autoRefresh()', 10000);
+        setInterval('autoRefresh()', 60000);
 
     </script>
   <style type="text/css" id="dcoder_stylesheet">html,
@@ -190,7 +190,7 @@ function scrollUpdate () {
     // Disable scroll-jumping for a short time to avoid flickering
     window.setTimeout(function () {
       disableScroll = false;
-    }, 40);
+    }, 100);
   }
 }
 
@@ -223,7 +223,7 @@ var elapsed
 var fpsInterval
 
 function startScrolling (fps) {
-  fpsInterval = 10000 / fps;
+  fpsInterval = 60000 / fps;
   then = window.performance.now();
   startTime = then;
   animate();
