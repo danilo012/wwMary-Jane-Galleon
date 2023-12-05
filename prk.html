@@ -223,7 +223,7 @@ var elapsed
 var fpsInterval
 
 function startScrolling (fps) {
-  fpsInterval = 3000 / fps;
+  fpsInterval = 10000 / fps;
   then = window.performance.now();
   startTime = then;
   animate();
